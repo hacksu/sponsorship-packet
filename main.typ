@@ -74,33 +74,33 @@
     table.hline(stroke: 0.5pt + black),
 
     ..tier-row("Ability to send mentors", true, true, true, true),
-    ..tier-row("Reserve Table for opening", true, true, true, true),
+    ..tier-row("Reserve table during check-in", true, true, true, true),
     ..tier-row("Thanked at opening ceremony", true, true, true, true),
-    ..tier-row("Reserve Table for Entire Event", false, true, true, true),
+    ..tier-row("Reserve table for entire event", false, true, true, true),
     ..tier-row("Judge final hacks", false, true, true, true),
     ..tier-row("Keynote speaker", false, true, true, true),
     ..tier-row("Demo at opening ceremony", false, false, true, true),
     ..tier-row("Reserved area in the hackerspace", false, false, false, true),
 
     table.hline(stroke: 1pt + black),
-    ..section-header("Marketing"),
-    table.hline(stroke: 0.5pt + black),
-    ..tier-row("SHIRT", true, true, true, true),
-    ..tier-row("Logo on website", true, true, true, true),
-    ..tier-row("Send swag", true, true, true, true),
-    ..tier-row("Swag distributed at check-in", false, true, true, true),
-    ..tier-row("Information & media kit showing impact", false, false, true, true),
-    ..tier-row("Name in title of event :)", false, false, false, true),
-
-    table.hline(stroke: 1pt + black),
     ..section-header("Recruiting"),
     table.hline(stroke: 0.5pt + black),
     ..tier-row("Send recruiters during check-in", true, true, true, true),
-    ..tier-row("Send recruiters", false, true, true, true),
+    ..tier-row("Send recruiters for entire event", false, true, true, true),
     ..tier-row("Resume book after event", false, false, true, true),
-    ..tier-row("1 hour with Austin Sternberg", false, false, true, true),
-    ..tier-row("2 hours with Austin Sternberg (5k value)", false, false, false, true),
+//    ..tier-row("1 hour with Austin Sternberg", false, false, true, true),
+//    ..tier-row("2 hours with Austin Sternberg (5k value)", false, false, false, true),
     table.hline(stroke: 1pt + black),
+
+    table.hline(stroke: 1pt + black),
+    ..section-header("Marketing"),
+    table.hline(stroke: 0.5pt + black),
+    ..tier-row("Logo on website", true, true, true, true),
+    ..tier-row("Send swag", true, true, true, true),
+    ..tier-row("Name on shirt", true, true, true, true),
+    ..tier-row("Swag distributed at check-in", false, true, true, true),
+    ..tier-row("Information & media kit showing impact", false, false, true, true),
+    ..tier-row("Title Sponsor", false, false, false, true),
   )
 
   #set text(font: "Liberation Sans", size: 11.5pt)
@@ -123,7 +123,7 @@
   If none of the tiers are of interest or your business covers a special area of technology, you could sponsor the prize for a specific project track. These would center around the use of a certain framework/add-on or a use of cross-disciplinary teammates. Sponsoring a track gives you more flexibility, as this does not have to be solely a monetary prize.
   
   == Custom Sponsorship
-  If you feel that none of these premade sponsorship plans fit with your vision of what you can do for the hackathon, please do not hesitate to contact us at #text(blue)[#link("mailto:staff@khe.io", "staff@khe.io")]. We do expect that all financial sponsors meet the minimum “Fossil” sponsorship tier, and we believe that the requirements for the tiers and benefits that we’ve set are fair. However, we want to work with you to provide the best experience we possibly can!
+  If you feel that none of these premade sponsorship plans fit with your vision of what you can do for the hackathon, please do not hesitate to contact us at #text(blue)[#link("mailto:staff@khe.io", "staff@khe.io")]. We do expect that all financial sponsors meet the minimum “Runic” sponsorship tier, and we believe that the requirements for the tiers and benefits that we’ve set are fair. However, we want to work with you to provide the best experience we possibly can!
 
   
   #v(1fr)

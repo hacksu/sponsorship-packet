@@ -1,6 +1,16 @@
 #set page(width: 8.5in, height: 11in, margin: 0pt)
 #set text(font: "Liberation Sans", size: 10pt)
 #import "@preview/shadowed:0.3.0": shadow
+
+
+#let tier1="Runic"
+#let tier2="Magical"
+#let tier3="Wizard"
+#let tier4="Royal"
+
+
+
+
 #place(
   top + left,
   block(width: 100%, height: 1.7in, clip: true)[
@@ -43,11 +53,11 @@
   
   #let blank = []
 
-  #let tier-row(label, runic, magical, wizard, royal, bold: false) = {
+  #let tier-row(label, t1, t2, t3, t4, bold: false) = {
     let cell(v) = align(center)[#if v { dot } else { blank }]
     (
       if bold { text(weight: "bold")[#label] } else { label },
-      cell(runic), cell(magical), cell(wizard), cell(royal)
+      cell(t1), cell(t2), cell(t3), cell(t4)
     )
   }
 
@@ -66,7 +76,7 @@
     inset: (x: 4pt, y: 3.5pt),
 
     table.hline(stroke: 1pt + black),
-    [Tier], [Runic], [Magical], [Wizard], [Royal],
+    [Tier], [#tier1], [#tier2], [#tier3], [#tier4],
     table.hline(stroke: 0.5pt + black),
 
     [], [\$1,000], [\$3,000], [\$5,000], [\$10,000],
@@ -117,13 +127,13 @@
   Sponsors are welcome to create a custom prize. This gives you the ability to stand out to the attendees, as well as potentially using it to incentivize the use of your product or service. Past prizes have included Raspberry Pis, Oculus Rifts, Bose Wireless Headphones, and Apple Watches.
   
   == Sponsored Meal
-  We are looking for sponsors to provide snacks. If your business can directly provide food or refreshments, we would love to hear from you! Alternatively, if you would like to sponsor a main meal, we can organize it and bill you for the amount (e.g., this pasta is brought to you by Company X).
+  We are looking for sponsors to provide snacks. If your business can directly provide food or refreshments, we would love to hear from you! Alternatively, if you would like to sponsor a main meal, we can organize it and bill you for the amount (e.g., this pasta/pizza/bagel is brought to you by Company X).
   
   == Sponsored Project Track
   If none of the tiers are of interest or your business covers a special area of technology, you could sponsor the prize for a specific project track. These would center around the use of a certain framework/add-on or a use of cross-disciplinary teammates. Sponsoring a track gives you more flexibility, as this does not have to be solely a monetary prize.
   
   == Custom Sponsorship
-  If you feel that none of these premade sponsorship plans fit with your vision of what you can do for the hackathon, please do not hesitate to contact us at #text(blue)[#link("mailto:staff@khe.io", "staff@khe.io")]. We do expect that all financial sponsors meet the minimum “Runic” sponsorship tier, and we believe that the requirements for the tiers and benefits that we’ve set are fair. However, we want to work with you to provide the best experience we possibly can!
+  If you feel that none of these premade sponsorship plans fit with your vision of what you can do for the hackathon, please do not hesitate to contact us at #text(blue)[#link("mailto:staff@khe.io", "staff@khe.io")]. We do expect that all financial sponsors meet the minimum “#tier1” sponsorship tier, and we believe that the requirements for the tiers and benefits that we’ve set are fair. However, we want to work with you to provide the best experience we possibly can!
 
   
   #v(1fr)

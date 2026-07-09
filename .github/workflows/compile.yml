@@ -44,12 +44,7 @@ jobs:
           </body>
           </html>
           EOF
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
+          
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
